@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Iris Classifier</h1>
+
+    <div class="form">
+        <input type="number" id="sl" placeholder="Sepal Length">
+        <input type="number" id="sw" placeholder="Sepal Width">
+        <input type="number" id="pl" placeholder="Petal Length">
+        <input type="number" id="pw" placeholder="Petal Width">
+
+        <button onclick="predict()">Predict</button>
+        <button onclick="getModelInfo()">Model Info</button>
+    </div>
+
+    <div class="output">
+        <h3 id="result"></h3>
+        <p id="confidence"></p>
+        <pre id="info"></pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
