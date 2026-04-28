@@ -10,5 +10,19 @@ from sklearn.metrics import accuracy_score
 import pickle
 import os
 
+app = FastAPI(title="Iris Classification")
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+MODEL_PATH = "model.pkl"
+
+
 
 
